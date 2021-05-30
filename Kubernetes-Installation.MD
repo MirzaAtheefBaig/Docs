@@ -32,6 +32,9 @@ yum install -y -q docker-ce >/dev/null 2>&1
 ```sh
 systemctl enable docker
 systemctl start docker
+
+#### Start docker on reboot of the server.
+chkconfig docker on
 ```
 ##### Disable SELinux
 ```sh
