@@ -40,6 +40,7 @@ chkconfig docker on
 ```sh
 setenforce 0
 sed -i --follow-symlinks 's/^SELINUX=enforcing/SELINUX=disabled/' /etc/sysconfig/selinux
+cat /etc/sysconfig/selinux
 ```
 ##### Disable Firewall
 ```sh
