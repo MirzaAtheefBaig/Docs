@@ -114,8 +114,9 @@ more calico.yaml
 ```
 
 ##### Deploy Calico network
-This has to be done as the user in the above step (in my case it is __praveen__)
+This has to be done as the user in the above step (in my case it is __Mirza__)
 ```sh
+su - mirza
 kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 ```
 
