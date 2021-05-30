@@ -139,3 +139,9 @@ kubectl get nodes
 ```sh
 kubectl get cs
 ```
+##### Kubectl commands
+
+```
+kubectl version --short
+kubectl cluster-info
+kubectl get pods -n kube-system
