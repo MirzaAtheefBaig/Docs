@@ -91,7 +91,7 @@ kubeadm init --apiserver-advertise-address=<MasterServerIP> --pod-network-cidr=1
 ##### Copy kube config
 To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.
 
-In my case, the user account is praveen
+In my case, the user account is mirza
 ```sh
 useradd mirza
 passwd welcome
