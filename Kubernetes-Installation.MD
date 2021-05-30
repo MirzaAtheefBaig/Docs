@@ -98,7 +98,11 @@ passwd welcome
 mkdir /home/mirza/.kube
 cp /etc/kubernetes/admin.conf /home/mirza/.kube/config
 chown -R mirza:mirza /home/mirza/.kube
+ls -ltr /home/mirza/.kube/
 ```
+To check Cert keys
+
+more /etc/kubernetes/admin.config 
 ##### Deploy Calico network
 This has to be done as the user in the above step (in my case it is __praveen__)
 ```sh
