@@ -100,9 +100,19 @@ cp /etc/kubernetes/admin.conf /home/mirza/.kube/config
 chown -R mirza:mirza /home/mirza/.kube
 ls -ltr /home/mirza/.kube/
 ```
-To check Cert keys
-
+**To check Cert keys**
+```
 more /etc/kubernetes/admin.config 
+```
+#### To install wget and download calico####
+
+```
+yum install wget
+wget  https://docs.projectcalico.org/v3.9/manifests/calico.yaml
+more calico.yaml
+
+```
+
 ##### Deploy Calico network
 This has to be done as the user in the above step (in my case it is __praveen__)
 ```sh
