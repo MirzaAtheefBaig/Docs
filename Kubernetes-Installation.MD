@@ -104,16 +104,18 @@ ls -ltr /home/mirza/.kube/
 ```
 more /etc/kubernetes/admin.config 
 ```
-#### To install wget and download calico####
+#### To install wget and download calico and install 
 
 ```
 yum install wget
 wget  https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 more calico.yaml
+mv calico.yaml /home/mirza
+kubectl create -f calico.yaml
 
 ```
 
-##### Deploy Calico network
+##### or It can be done using single command below, Deploy Calico network
 This has to be done as the user in the above step (in my case it is __Mirza__)
 ```sh
 su - mirza
